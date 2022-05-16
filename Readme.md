@@ -38,12 +38,12 @@ Exécution du serveur
 Dans le répertoire API, assurez-vous d'abord que vous travaillez avec votre environnement virtuel créé.
 
 Pour exécuter le serveur sous Linux ou Mac, exécutez:
-*export FLASK_APP=flaskr
+*export FLASK_APP=API
 export FLASK_ENV=development
 flask run*
 
 Pour exécuter le serveur sous Windows, exécutez:
-*set FLASK_APP=flaskr
+*set FLASK_APP=API
 set FLASK_ENV=development
 flask run*
 
@@ -228,7 +228,53 @@ POINTS FINAUX (END POINTS)
     }
     
     
-    
+## GET/livre/categorie (categorie_id)    
+
+    GÉNÉRAL:
+     Ce point de terminaison permet de lister les livres qui sont dans une catégorie
+     On retourne les livres, la reussite de la requête
+     
+     "livres": [
+        {
+            "auteur": "Jean Robert",
+            "categorie_id": 15,
+            "date_publication": "Sun, 10 May 2020 00:00:00 GMT",
+            "editeur": "France Edition",
+            "id": 3,
+            "isbn": 1010,
+            "titre": "Petit Robert"
+        },
+        {
+            "auteur": "Jean Robert",
+            "categorie_id": 15,
+            "date_publication": "Sun, 10 May 2020 00:00:00 GMT",
+            "editeur": "France Edition",
+            "id": 8,
+            "isbn": 1011,
+            "titre": "Larousse"
+        },
+        {
+            "auteur": "Jean Robert",
+            "categorie_id": 15,
+            "date_publication": "Sun, 10 May 2020 00:00:00 GMT",
+            "editeur": "France Edition",
+            "id": 9,
+            "isbn": 1012,
+            "titre": "Larousse"
+        },
+        {
+            "auteur": "Larousse Guillaume",
+            "categorie_id": 15,
+            "date_publication": "Mon, 10 May 2021 00:00:00 GMT",
+            "editeur": "France Edition",
+            "id": 25,
+            "isbn": 1014,
+            "titre": "Larousse Junior"
+        }
+    ],
+    "nombre_livres": 4,
+    "success": true
+}
     
 
 
