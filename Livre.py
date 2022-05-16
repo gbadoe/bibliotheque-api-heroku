@@ -1,9 +1,7 @@
 from os import abort
-from sqlite3 import IntegrityError
 from token import AT
 from flask import Flask, jsonify, request
 from flask_sqlalchemy import SQLAlchemy
-import psycopg2
 # importation de flask
 
 
