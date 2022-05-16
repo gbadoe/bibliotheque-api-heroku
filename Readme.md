@@ -117,7 +117,7 @@ POINTS FINAUX (END POINTS)
     }
     
     
-## POST/supprimer (livre_id)
+## DELETE/supprimer (livre_id)
 
      GÉNÉRAL:
     Supprimer l'usine de l'ID donné si elle existe. Renvoie l'identifiant du livre supprimée, la valeur de réussite, le nombre total de livres
@@ -129,7 +129,7 @@ POINTS FINAUX (END POINTS)
     }
 
 
-## POST/supprimer_categorie (categorie_id)
+## DELETE/supprimer_categorie (categorie_id)
 
      GÉNÉRAL:
     Supprimer l'usine de l'ID donné si elle existe. Renvoie l'identifiant de la categorie supprimée, la valeur de réussite, le nombre total de livres
