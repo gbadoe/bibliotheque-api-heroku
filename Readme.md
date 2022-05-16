@@ -38,18 +38,18 @@ Exécution du serveur
 Dans le répertoire API, assurez-vous d'abord que vous travaillez avec votre environnement virtuel créé.
 
 Pour exécuter le serveur sous Linux ou Mac, exécutez:
-*export FLASK_APP=API
+*export FLASK_APP= Livre.py
 export FLASK_ENV=development
 flask run*
 
 Pour exécuter le serveur sous Windows, exécutez:
-*set FLASK_APP=API
+*set FLASK_APP= Livre.py
 set FLASK_ENV=development
 flask run*
 
 La définition de la variable FLASK_ENV sur développement détectera les modifications de fichiers et redémarrera le serveur automatiquement.
 
-La définition de la variable FLASK_APP sur flaskr indique à flask d'utiliser le répertoire flaskr et le fichier __init__.py pour rechercher l'application.
+La définition de la variable FLASK_APP sur API indique à flask d'utiliser le répertoire API et le fichier Livre.py pour rechercher l'application.
 
 ## RÉFÉRENCE API
 
