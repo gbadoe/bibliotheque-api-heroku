@@ -14,9 +14,9 @@ Nous vous recommandons de travailler dans un environnement virtuel chaque fois q
 
 Une fois que vous avez configuré et exécuté votre environnement virtuel, installez les dépendances en accédant au répertoire /API et en exécutant:
 
-* pip install -r requirement.txt
-ou
-* pip3 install -r requirement.txt
+  * pip install -r requirement.txt
+    ou
+  * pip3 install -r requirement.txt
 
 Cela installera tous les packages requis que nous avons sélectionnés dans le fichier requirements.txt.
 
@@ -38,14 +38,14 @@ Exécution du serveur
 Dans le répertoire API, assurez-vous d'abord que vous travaillez avec votre environnement virtuel créé.
 
 Pour exécuter le serveur sous Linux ou Mac, exécutez:
-*export FLASK_APP= Livre.py
-export FLASK_ENV=development
-flask run*
+ *export FLASK_APP= Livre.py
+  export FLASK_ENV=development
+  flask run*
 
 Pour exécuter le serveur sous Windows, exécutez:
-*set FLASK_APP= Livre.py
-set FLASK_ENV=development
-flask run*
+ *set FLASK_APP= Livre.py
+ set FLASK_ENV=development
+ flask run*
 
 La définition de la variable FLASK_ENV sur développement détectera les modifications de fichiers et redémarrera le serveur automatiquement.
 
@@ -60,7 +60,7 @@ URL de base: à l'heure actuelle, cette application ne peut être exécutée que
 
 Les erreurs sont renvoyées sous forme d'objets JSON au format suivant : { "success":False "error": 400 "message":"Bad request }
 
-L'API renverra quatre types d'erreurs en cas d'échec des requêtes : . 400 : Mauvaise requête . 500 : erreur interne du serveur . 422 : Impossible à traiter . 404 : Non trouvé
+L'API renverra quatre types d'erreurs en cas d'échec des requêtes : . 400 : Mauvaise requête . 500 : erreur interne du serveur . 422 : Impossible à traiter . 404 : Non trouvé . 405 : Methode non autorisé
 
 POINTS FINAUX (END POINTS)
 
